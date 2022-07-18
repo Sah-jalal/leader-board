@@ -79,7 +79,23 @@ main{
 }
 
 /* ---------media start------------------ */
-@media screen and (max-width: 688px) {
+
+@media screen and (max-width: 400px) {
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .blogs .thumbnail img{
+        width: 95px;
+        height: 60px;
+    }
+    .blog-info{
+        font-size: 0.4em;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 688px) {
     .blogs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
